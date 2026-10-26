@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050605">
+  <meta name="description" content="INTERNET.exe: un escritorio de internet caótico y absurdo para explorar.">
+  <title>INTERNET.exe</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main id="desktop" aria-label="Escritorio">
+    <nav id="icons" aria-label="Programas"></nav>
+    <div id="windows"></div>
+  </main>
+
+  <footer id="taskbar">
+    <button id="show-desktop" class="tb-btn" type="button" aria-label="Mostrar u ocultar todas las ventanas">Escritorio</button>
+    <div id="tasks" role="group" aria-label="Ventanas abiertas"></div>
+    <time id="clock" aria-label="Hora"></time>
+  </footer>
+
+  <p id="status" class="sr-only" role="status" aria-live="polite"></p>
+
+  <script src="js/windows.js"></script>
+  <script src="js/apps.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
